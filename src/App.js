@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import AboutMe from "./components/AboutMe";
+import Sidebar from "./components/Sidebar";
+import ProjectPage from "./components/Projects";
+
+const App = () => {
+
+  const homeRef = useRef(null);
+  const projectRef = useRef(null);
+  
+  const scrollTo = (ref) => {
+    window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: 'smooth',
+    });
+  };
+
+  const sidebarHandler = (id) => {
+    switch (id) {
+      case 0:
+        try {scrollTo(homeRef);}
+        catch (e) {
+          console.log(e);
+        }
+        break;
+      case 1:
+        try {scrollTo(projectRef);}
+        catch (e) {
+          console.log(e);
+        }
+        break;
+      default:
+        break;
+    }
+  }
+
+
+  return (    
+  <div className="">
+      <Sidebar sidebarHandler={sidebarHandler} ></Sidebar>
+      <div className="absolute top-0 right-0 pl-8 pr-8 w-full-300 pb-8">
+        <div ref={homeRef} className="pt-8">
+            <AboutMe></AboutMe>
+        </div>
+        <div ref={projectRef} className="pt-8">
+            <ProjectPage></ProjectPage>
+        </div>
+      </div>
     </div>
   );
-}
+};
+document.body.style.background = '#fafafa';
 
 export default App;
