@@ -11,6 +11,7 @@ import ContactPage from "./components/ContactPage";
 const App = () => {
   const pages = [<AboutMe/>, <ProjectPage/>, <EducationPage/>, <ExperiencePage/>, <SkillPage/>, <ContactPage/>]
   const ref = useRef(Array(pages.length).fill(null))
+  const homeRef = useRef(null);
   const scrollTo = (current) => {
     current.scrollIntoView({
       behavior: 'smooth',
@@ -25,10 +26,19 @@ const App = () => {
     }
   }
 
+  const scrollTop = () => {
+    homeRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
   return (    
   <div className="flex sm:flex-row sm:py-0 py-8 flex-col overflow-y-auto h-screen">
-    <div className="sm:hidden p-4 m-2 hover:shadow-2xl hover:outline-2 hover:outline-blue-600 hover:outline hover:bg-blue-200 hover: h-fit min-w-8 w-fit right-0 bottom-0 absolute rounded-md shadow-md bg-blue-300"> Go to top </div>
-    <div className="sm:min-w-[90px] sm:pl-8 sm:px-0 px-8 sm:py-8">
+    <button onClick={() => scrollTop()} className="sm:hidden p-4 m-2 hover:shadow-2xl hover:outline-2 hover:outline-blue-600 hover:outline hover:bg-blue-200 hover: h-fit min-w-8 w-fit right-0 bottom-0 absolute rounded-md shadow-md bg-blue-300"> 
+      Scroll to top 
+    </button>
+    <div ref={homeRef} className="sm:min-w-[90px] sm:pl-8 sm:px-0 px-8 sm:py-8">
       <Sidebar  sidebarHandler={sidebarHandler} ></Sidebar>
     </div>
     <div className="sm:grow h-full sm:flex-col sm:overflow-y-auto justify-between snap-proximity snap-y px-8 pb-4">
