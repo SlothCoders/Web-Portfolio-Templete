@@ -26,18 +26,19 @@ const App = () => {
   }
 
   return (    
-  <div className="flex flex-row  h-screen">
-      <div className="min-w-[90px] pl-8 py-8">
-        <Sidebar  sidebarHandler={sidebarHandler} ></Sidebar>
-      </div>
-      <div className="grow h-full flex-col overflow-y-auto justify-between snap-proximity snap-y px-8 pb-4 ">
-        {
-          pages.map((page) => 
-          <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===0?"pt-8 mb-4 snap-center":"my-4 snap-center"}>
-            {page}
-          </div>)
-        }
-      </div>
+  <div className="flex sm:flex-row sm:py-0 py-8 flex-col overflow-y-auto h-screen">
+    <div className="sm:hidden p-4 m-2 hover:shadow-2xl hover:outline-2 hover:outline-blue-600 hover:outline hover:bg-blue-200 hover: h-fit min-w-8 w-fit right-0 bottom-0 absolute rounded-md shadow-md bg-blue-300"> Go to top </div>
+    <div className="sm:min-w-[90px] sm:pl-8 sm:px-0 px-8 sm:py-8">
+      <Sidebar  sidebarHandler={sidebarHandler} ></Sidebar>
+    </div>
+    <div className="sm:grow h-full sm:flex-col sm:overflow-y-auto justify-between snap-proximity snap-y px-8 pb-4">
+      {
+        pages.map((page) => 
+        <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===0?"pt-8 mb-8 snap-center":"sm:my-8 mb-8 snap-center"}>
+          {page}
+        </div>)
+      }
+    </div>
   </div>
   );
 };

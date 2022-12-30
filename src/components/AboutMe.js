@@ -4,7 +4,7 @@ import CustomImg from './CustomImg';
 const AboutMe = () => {
 
     return (
-            <div  className="w-full bg-white min-h-card p-8 rounded-2xl shadow-2xl outline outline-gray-300 outline-1">
+            <div  className="w-full bg-white sm:min-h-card p-8 rounded-2xl shadow-2xl outline outline-gray-300 outline-1">
             <h1 className="">Hi 👋, I’m Minh Dang
             </h1>
             <h2>
