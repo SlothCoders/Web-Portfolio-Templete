@@ -26,17 +26,17 @@ const App = () => {
   }
 
   return (    
-  <div className="flex flex-row">
-      <div className="flex h-full flex-col overflow-y-auto justify-between snap-proximity snap-y absolute right-0 px-8 pb-4 w-full-300 ">
+  <div className="flex flex-row  h-screen">
+      <div className="min-w-[90px] pl-8 py-8">
+        <Sidebar  sidebarHandler={sidebarHandler} ></Sidebar>
+      </div>
+      <div className="grow h-full flex-col overflow-y-auto justify-between snap-proximity snap-y px-8 pb-4 ">
         {
           pages.map((page) => 
           <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===0?"pt-8 mb-4 snap-center":"my-4 snap-center"}>
             {page}
           </div>)
         }
-      </div>
-      <div className="w-full h-screen p-8 top-0 bottom-0 left-0 right-0">
-        <Sidebar  sidebarHandler={sidebarHandler} ></Sidebar>
       </div>
   </div>
   );

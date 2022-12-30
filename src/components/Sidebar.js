@@ -22,7 +22,7 @@ const Sidebar = (props) => {
 
           <div className="flex-1 max-h-full darkscrollbar overflow-y-auto">
             <div onClick={() => props.sidebarHandler(0)}
-              className="p-2.5 mt-3 w-fill rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
+              className="p-2.5 mt-3 rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
               <p   className="text-[15px] ml-2 text-gray-200 font-bold">About Me</p>
             </div>
