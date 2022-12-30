@@ -3,12 +3,14 @@ import { useRef } from "react";
 import AboutMe from "./components/AboutMe";
 import Sidebar from "./components/Sidebar";
 import ProjectPage from "./components/Projects";
+import EducationPage from "./components/Education";
+import ExperiencePage from "./components/Experience";
+import SkillPage from "./components/Skills";
+import ContactPage from "./components/ContactPage";
 
 const App = () => {
-
-  const homeRef = useRef(null);
-  const projectRef = useRef(null);
-  
+  const ref = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)]
+  const pages = [<AboutMe/>, <ProjectPage/>, <EducationPage/>, <ExperiencePage/>, <SkillPage/>, <ContactPage/>]
   const scrollTo = (ref) => {
     window.scrollTo({
         top: ref.current.offsetTop,
@@ -17,37 +19,24 @@ const App = () => {
   };
 
   const sidebarHandler = (id) => {
-    switch (id) {
-      case 0:
-        try {scrollTo(homeRef);}
-        catch (e) {
-          console.log(e);
-        }
-        break;
-      case 1:
-        try {scrollTo(projectRef);}
-        catch (e) {
-          console.log(e);
-        }
-        break;
-      default:
-        break;
+    try {scrollTo(ref[id]);}
+    catch (e) {
+      console.log(e);
     }
   }
-
 
   return (    
   <div className="">
       <Sidebar sidebarHandler={sidebarHandler} ></Sidebar>
-      <div className="absolute top-0 right-0 pl-8 pr-8 w-full-300 pb-8">
-        <div ref={homeRef} className="pt-8">
-            <AboutMe></AboutMe>
-        </div>
-        <div ref={projectRef} className="pt-8">
-            <ProjectPage></ProjectPage>
-        </div>
+      <div className="snap-y absolute right-0 pl-8 pr-8 w-full-300 pb-8">
+        {
+          pages.map((page) => 
+          <div key={pages.indexOf(page)} ref={ref[pages.indexOf(page)]} className="pt-8 snap-center">
+            {page}
+          </div>)
+        }
       </div>
-    </div>
+  </div>
   );
 };
 document.body.style.background = '#fafafa';
