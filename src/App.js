@@ -33,6 +33,8 @@ const App = () => {
     });
   }
 
+  scrollTop();
+
   return (    
   <div className="flex sm:flex-row sm:py-0 py-8 flex-col overflow-y-auto h-screen">
     <button onClick={() => scrollTop()} className="sm:hidden p-4 m-2 hover:shadow-2xl hover:outline-2 hover:outline-blue-600 hover:outline hover:bg-blue-200 hover: h-fit min-w-8 w-fit right-0 bottom-0 absolute rounded-md shadow-md bg-blue-300"> 
