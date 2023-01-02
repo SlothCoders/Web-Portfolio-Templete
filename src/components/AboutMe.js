@@ -1,4 +1,3 @@
-import LazyLoad from 'react-lazy-load';
 import CustomImg from './CustomImg';
 
 const AboutMe = () => {
