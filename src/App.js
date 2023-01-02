@@ -35,20 +35,22 @@ const App = () => {
   }
   
   useEffect(() => {sidebarHandler(0)})
+  document.body.style.background = '#fafafa';
   
   return (    
     <BrowserRouter>
     <Routes>
     
     <Route path="/" element={
-        <div className="grid place-items-center h-screen">
-    <Link to="/portfolio">
-        <div className="h-fit w-fit p-4 active:shadow-2xl active:outline-2  active:outline-blue-600  active:outline  active:bg-blue-200 rounded-md shadow-md bg-blue-300">Access My Portfolio</div>
-    </Link>
-        </div>
+      <div className="grid place-items-center h-screen">
+          <Link to="/portfolio">
+              <div className="h-fit w-fit p-4 active:shadow-2xl active:outline-2  active:outline-blue-600  active:outline  active:bg-blue-200 rounded-md shadow-md bg-blue-300">Access My Portfolio</div>
+          </Link>
+              </div>
     }/>
 
-    <Route path="portfolio" element={
+      
+    <Route path="/portfolio" element={
       <div className="sm:flex sm:flex-row sm:py-0 pt-8 sm:overflow-y-auto h-full sm:h-screen">
         <button onClick={() => scrollTop()} className="fixed sm:hidden p-4 m-2  active:shadow-2xl  active:outline-2  active:outline-blue-600  active:outline  active:bg-blue-200  h-fit min-w-8 w-fit right-0 bottom-0 rounded-md shadow-md bg-blue-300"> 
           Scroll to top 
@@ -66,11 +68,12 @@ const App = () => {
         </div>
       </div>
       } />
+
+    <Route path="*" element={<div>404 NotFound</div>} />
     </Routes>
     </BrowserRouter>
   );
 };
 
-document.body.style.background = '#fafafa';
 
 export default App;

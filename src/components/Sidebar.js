@@ -8,7 +8,7 @@ const Sidebar = (props) => {
       >
         <div className="flex h-fit">
           <LazyLoad className="w-full px-8 pt-8">
-            <img className="rounded-full" src="https://avatars.githubusercontent.com/u/37279565"></img>
+            <img className="rounded-full" src="https://avatars.githubusercontent.com/u/37279565" alt="Personal Image"></img>
           </LazyLoad>
           
         </div>
