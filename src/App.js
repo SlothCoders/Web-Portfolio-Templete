@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 import AboutMe from "./components/AboutMe";
 import Sidebar from "./components/Sidebar";
@@ -12,29 +12,35 @@ const App = () => {
   const pages = [<AboutMe/>, <ProjectPage/>, <EducationPage/>, <ExperiencePage/>, <SkillPage/>, <ContactPage/>]
   const ref = useRef(Array(pages.length).fill(null))
   const homeRef = useRef(null);
+  
+  
   const scrollTo = (current) => {
     current.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
   };
-
+  
   const sidebarHandler = (id) => {
     try {scrollTo(ref.current[id]);}
     catch (e) {
       console.log(e);
     }
   }
-
+  
   const scrollTop = () => {
-    homeRef.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    try {
+      homeRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    } catch (error) {
+      console.log(error)
+    }
   }
-
-  scrollTop();
-
+  
+  useEffect(() => {sidebarHandler(0)})
+  
   return (    
   <div className="flex sm:flex-row sm:py-0 py-8 flex-col overflow-y-auto h-screen">
     <button onClick={() => scrollTop()} className="sm:hidden p-4 m-2 hover:shadow-2xl hover:outline-2 hover:outline-blue-600 hover:outline hover:bg-blue-200 hover: h-fit min-w-8 w-fit right-0 bottom-0 absolute rounded-md shadow-md bg-blue-300"> 
@@ -46,7 +52,7 @@ const App = () => {
     <div className="sm:grow h-full sm:flex-col sm:overflow-y-auto justify-between snap-proximity snap-y px-8 pb-4">
       {
         pages.map((page) => 
-        <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===0?"pt-8 mb-8 snap-center":"sm:my-8 mb-8 snap-center"}>
+        <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===0?"pt-8 mb-8 snap-start":"sm:my-8 mb-8 snap-center"}>
           {page}
         </div>)
       }
