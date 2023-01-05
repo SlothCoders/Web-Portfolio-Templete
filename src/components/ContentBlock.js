@@ -2,10 +2,11 @@ import CustomImg from './CustomImg';
 
 const ContentBlock = (props) => {
     return (
-        <div className="transition ease-in-out bg-white px-4 py-2 mx-4 hover:scale-[1.01] shadow-sm mb-4 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
+        <div className="transition ease-linear duration-100 bg-white px-4 py-2 mx-4 hover:scale-[1.01] shadow-sm mb-4 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
+            <p>{props.duration}</p>
             <div className='flex justify-between'>
                 <h2><li>{props.prjName}</li></h2>
-                <p>{props.duration}</p>
+                <button before={props.url} onClick={() => window.open(props.url)} className="transition ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 text-sm px-8 rounded-full text-gray-50 hover"></button>
             </div>
             { 
                 props.description?.map(para => <p key={props.description.indexOf(para)}>{para}</p>)

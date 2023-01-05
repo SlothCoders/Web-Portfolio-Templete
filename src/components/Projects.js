@@ -8,6 +8,7 @@ const ProjectPage = () => {
                 <ol className="list-decimal list-inside">
 
                 <ContentBlock 
+                            url="https://github.com/minhdangphuoc/Motion-Capture"
                             prjName="Motion Capture using Open CV and Open GL" 
                             duration="04/09/2022 – CURRENT" 
                             description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
@@ -28,7 +29,8 @@ const ProjectPage = () => {
                                 "des":"Animation scene rendering"
                             }
                         ]}/>
-                <ContentBlock 
+                <ContentBlock
+                            url="https://github.com/minhdangphuoc/OpenGL-Renderer" 
                             prjName="Motion Capture using Open CV and Open GL" 
                             duration="04/09/2022 – CURRENT" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
