@@ -18,7 +18,7 @@ const ProjectPage = () => {
                             "• Create protocol to transfer human pose data using UDP."]}
                             images={[
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/img/opencv.jpg",
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/img/opencv.jpeg?raw=true",
                                 "alt":"OpenCV",
                                 "des":"Motion Capture using OpenCV"
                             },
