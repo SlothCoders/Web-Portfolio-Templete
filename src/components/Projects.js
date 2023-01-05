@@ -81,7 +81,7 @@ const ProjectPage = () => {
                             prjName="Covid 19 Tracking and News - Android Application" 
                             duration="04/2022 – 04/2022" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
-                            documentUri="https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/Covid%20Tracking%20Application%20Doc.pdf"
+                            documentUri="https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/Covid%20Tracking%20Application%20Doc.pdf?raw=true"
                             />
 
                 </ol>

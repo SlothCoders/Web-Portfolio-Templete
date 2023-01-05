@@ -11,8 +11,6 @@ const ContentBlock = (props) => {
                 props.setMaximizeAll((prevState) => {
                     let newState = prevState.slice(0);;
                     newState[props.id] = !prevState[props.id];
-                    console.log(prevState)
-                    console.log(newState)
                     return newState;
                 })
             }
@@ -32,13 +30,9 @@ const ContentBlock = (props) => {
             }
             
             {props.isMaximize[props.id]  === true &&
-                props.images?.map((image) => 
-                <div>
-                    <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>
-                    <DocViewer documents={props.documentUri} />
-                </div>)
+                 props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)
             }
-            {props.isMaximize[props.id]  === false &&
+              {props.isMaximize[props.id]  === false &&
                 <div>
                     <div className='bg-gray-200 h-[1px]'></div>
                     <p className='w-full text-center mt-4'>{"Click to expand this card"}</p>
