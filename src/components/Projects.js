@@ -2,23 +2,22 @@ import { useState } from 'react';
 
 import ContentBlock from './ContentBlock';
 const ProjectPage = () => {
-    const [isMaximizeAll, setMaximizeAll] = useState(Array(5).fill(false)) 
+    const [isMaximizeAll, setMaximizeAll] = useState(Array(20).fill(false)) 
+    var counter=0;
     return (
-       
-        
             <div  className="w-full bg-white px-4 py-8 sm:min-h-card rounded-xl shadow-2xl outline outline-gray-300 outline-1">
                 <div className='flex justify-between mb-2'>
                 <h1 className="pl-4">PROJECT</h1>
                     <div>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="bg-gray-800 py-3 mr-1 hover:bg-blue-600 text-sm px-8 rounded-full text-gray-50 hover">{"Expand All"}</button>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="bg-gray-800 py-3 hover:bg-blue-600 text-sm px-8 rounded-full text-gray-50 hover">{"Close All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="bg-gray-800 py-3 mr-1 hover:bg-blue-600 xl:text-sm text-xs px-8 rounded-full text-gray-50 hover">{"Expand All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="bg-gray-800 py-3 hover:bg-blue-600 xl:text-sm text-xs px-8 rounded-full text-gray-50 hover">{"Close All"}</button>
                     </div>
                 </div>
                 
                 <ol className="list-decimal list-inside">
 
                 <ContentBlock 
-                            id={0}
+                            id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/Motion-Capture"
@@ -44,7 +43,7 @@ const ProjectPage = () => {
                             }
                         ]}/>
                 <ContentBlock
-                            id={1}
+                            id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/OpenGL-Renderer" 
@@ -61,7 +60,7 @@ const ProjectPage = () => {
                         ]}/>
 
                 <ContentBlock
-                            id={2}
+                            id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/MD-Vulkan-Renderer" 
@@ -77,17 +76,35 @@ const ProjectPage = () => {
                             },]}
                         />
                 <ContentBlock
-                            id={3}
+                            id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/Covid-19-Tracking-and-News" 
-                            prjName="Covid 19 Tracking and News - Android Application" 
+                            prjName="Covid 19 Tracking and News" 
                             duration="04/2022 – 04/2022" 
                             description={["Covid-19 is remaining an interesting topic to work with. By understanding personal needs, an application is made for updating news about covid-19 from any country.",]}
                             documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/a9ccf38de2fd7c58deb726475d5a6582b3e86982/res/Covid%20Tracking%20Application%20Doc.pdf"
                             images={[]}
                             />
-
+                <ContentBlock
+                            id={counter++}
+                            isMaximize={isMaximizeAll}
+                            setMaximizeAll={setMaximizeAll}
+                            url="https://github.com/minhdangphuoc/MD-Vulkan-Renderer" 
+                            prjName="TailwindCSS Todo List" 
+                            duration="11/2021 – 12/2022" 
+                            description={[
+                                "- Express backend generates random tasks from a REST API endpoint.",
+                                "- ReactJS and TailwindCSS frontend with a simple TODO-app where initial tasks are fetched from the backend.",
+                            ]}
+                            documentUri=""
+                            images={[
+                            {
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/todolist.png",
+                                "alt":"Todo List Screenshot",
+                                "des":"TailwindCSS Todo List"
+                            },]}
+                        />
                 </ol>
             </div>
     );
