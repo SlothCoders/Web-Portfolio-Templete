@@ -23,9 +23,9 @@ const ProjectPage = () => {
                                 "des":"Motion Capture using OpenCV"
                             },
                             {
-                                "src":"",
-                                "alt":"",
-                                "des":""
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/img/OpenGL_Assimp_Animation.gif?raw=true",
+                                "alt":"OpenGL Renderer",
+                                "des":"Animation scene rendering"
                             }
                         ]}/>
                 <ContentBlock 
@@ -37,11 +37,6 @@ const ProjectPage = () => {
                                 "src":"https://github.com/minhdangphuoc/OpenGL-Renderer/raw/develop/screenshots/sphereandmodel.png?raw=true",
                                 "alt":"Model Lighting",
                                 "des":"Static Model Loading with Global Lighting System"
-                            },
-                            {
-                                "src":"https://github.com/minhdangphuoc/OpenGL-Renderer/blob/develop/screenshots/Animation.gif?raw=true",
-                                "alt":"Assimp Animation",
-                                "des":"Rendering model with Assimp Animation"
                             },
                         ]}/>
                 </ol>
