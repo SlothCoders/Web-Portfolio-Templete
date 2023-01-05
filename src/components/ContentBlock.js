@@ -32,7 +32,7 @@ const ContentBlock = (props) => {
             {!props.isMaximize[props.id] ?
                 <div>
                     <div className='bg-gray-200 h-[1px]'></div>
-                    <p className='w-full text-center mt-4'>{"Click to expand this card"}</p>
+                    <p className='w-full text-center mt-4'>{"Click to expand"}</p>
                 </div>
                 : <div>
                     {props.documentUri.length!==0&& 

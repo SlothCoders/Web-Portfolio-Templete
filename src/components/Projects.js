@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import ContentBlock from './ContentBlock';
 const ProjectPage = () => {
-    const [isMaximizeAll, setMaximizeAll] = useState(Array(20).fill(false)) 
+    const [isMaximizeAll, setMaximizeAll] = useState(Array(20).fill(true)) 
     var counter=0;
     return (
             <div  className="w-full bg-white px-4 py-8 sm:min-h-card rounded-xl shadow-2xl outline outline-gray-300 outline-1">
@@ -92,7 +92,7 @@ const ProjectPage = () => {
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/MD-Vulkan-Renderer" 
                             prjName="TailwindCSS Todo List" 
-                            duration="11/2021 – 12/2022" 
+                            duration="11/2021 – 12/2021" 
                             description={[
                                 "- Express backend generates random tasks from a REST API endpoint.",
                                 "- ReactJS and TailwindCSS frontend with a simple TODO-app where initial tasks are fetched from the backend.",
@@ -100,7 +100,7 @@ const ProjectPage = () => {
                             documentUri=""
                             images={[
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/todolist.png",
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/todolist.png?raw=true",
                                 "alt":"Todo List Screenshot",
                                 "des":"TailwindCSS Todo List"
                             },]}
