@@ -31,28 +31,28 @@ const Sidebar = (props) => {
               onClick={() => props.sidebarHandler(1)}
               className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Projects</p>
+              <p className="text-[15px] ml-2 text-gray-200 font-bold">Education</p>
             </div>
 
             <div
             onClick={() => props.sidebarHandler(2)}
             className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
             >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Education</p>
+              <p className="text-[15px] ml-2 text-gray-200 font-bold">Experience</p>
             </div>
 
             <div
               onClick={() => props.sidebarHandler(3)}
               className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Experience</p>
+              <p className="text-[15px] ml-2 text-gray-200 font-bold">Projects</p>
             </div>
 
             <div
               onClick={() => props.sidebarHandler(4)}
               className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Education</p>
+              <p className="text-[15px] ml-2 text-gray-200 font-bold">Skills</p>
             </div>
             
 

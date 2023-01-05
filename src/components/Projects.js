@@ -83,7 +83,7 @@ const ProjectPage = () => {
                             url="https://github.com/minhdangphuoc/Covid-19-Tracking-and-News" 
                             prjName="Covid 19 Tracking and News - Android Application" 
                             duration="04/2022 – 04/2022" 
-                            description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
+                            description={["Covid-19 is remaining an interesting topic to work with. By understanding personal needs, an application is made for updating news about covid-19 from any country.",]}
                             documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/a9ccf38de2fd7c58deb726475d5a6582b3e86982/res/Covid%20Tracking%20Application%20Doc.pdf"
                             images={[]}
                             />

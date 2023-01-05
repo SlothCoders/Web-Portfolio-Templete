@@ -35,10 +35,12 @@ const ContentBlock = (props) => {
                     <p className='w-full text-center mt-4'>{"Click to expand this card"}</p>
                 </div>
                 : <div>
-                    {props.documentUri.length!=0&& 
-                        <div className='h-[750px] mx-12 outline outline-2 outline-grey-400 my-8'>
-                            <Viewer fileUrl={props.documentUri}/>
-                        </div> }
+                    {props.documentUri.length!==0&& 
+                        <div className='flex justify-center'>
+                            <div className='h-[750px] w-[1000px]  outline outline-2 outline-grey-400 my-8'>
+                                <Viewer className="object-cover" fileUrl={props.documentUri}/>
+                            </div> 
+                        </div>}
                     { props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)}
                 </div>}
         </div>

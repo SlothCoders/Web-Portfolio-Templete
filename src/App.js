@@ -11,7 +11,7 @@ import SkillPage from "./components/Skills";
 import ContactPage from "./components/ContactPage";
 
 const App = () => {
-  const pages = [<AboutMe/>, <ProjectPage/>, <EducationPage/>, <ExperiencePage/>, <SkillPage/>, <ContactPage/>]
+  const pages = [<AboutMe/>, <EducationPage/>, <ExperiencePage/>, <ProjectPage/>, <SkillPage/>, <ContactPage/>]
   const ref = useRef(Array(pages.length).fill(null)) 
   
   const scrollTo = (current) => {
