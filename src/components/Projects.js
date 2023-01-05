@@ -32,12 +32,12 @@ const ProjectPage = () => {
                             "• Create protocol to transfer human pose data using UDP."]}
                             images={[
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/img/opencv.jpeg?raw=true",
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/opencv.jpeg?raw=true",
                                 "alt":"OpenCV",
                                 "des":"Motion Capture using OpenCV"
                             },
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/img/OpenGL_Assimp_Animation.gif?raw=true",
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/OpenGL_Assimp_Animation.gif?raw=true",
                                 "alt":"OpenGL Renderer",
                                 "des":"Animation scene rendering"
                             }
@@ -81,13 +81,8 @@ const ProjectPage = () => {
                             prjName="Covid 19 Tracking and News - Android Application" 
                             duration="04/2022 – 04/2022" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
-                            images={[
-                            {
-                                "src":"https://github.com/minhdangphuoc/OpenGL-Renderer/raw/develop/screenshots/sphereandmodel.png?raw=true",
-                                "alt":"Model Lighting",
-                                "des":"Static Model Loading with Global Lighting System"
-                            },
-                        ]}/>
+                            documentUri="https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/Covid%20Tracking%20Application%20Doc.pdf"
+                            />
 
                 </ol>
             </div>

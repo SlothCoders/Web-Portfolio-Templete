@@ -1,4 +1,5 @@
 import CustomImg from './CustomImg';
+import DocViewer from "react-doc-viewer";
 
 const ContentBlock = (props) => {
     // const [isMaximize,setMaximize] = useState(props.isMaximizeAll)
@@ -31,7 +32,11 @@ const ContentBlock = (props) => {
             }
             
             {props.isMaximize[props.id]  === true &&
-                 props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)
+                props.images?.map((image) => 
+                <div>
+                    <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>
+                    <DocViewer documents={props.documentUri} />
+                </div>)
             }
             {props.isMaximize[props.id]  === false &&
                 <div>
