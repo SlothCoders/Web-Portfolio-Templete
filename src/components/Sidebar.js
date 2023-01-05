@@ -4,7 +4,7 @@ const Sidebar = (props) => {
 
   return (
       <div
-        className='h-full p-2 sm:max-w-[300px] text-center rounded-2xl bg-gray-900 flex flex-col'
+        className='h-full p-2 sm:max-w-[300px] text-center rounded-xl bg-gray-900 flex flex-col'
       >
         <div className="flex h-fit">
           <LazyLoad className="w-full px-8 pt-8">
