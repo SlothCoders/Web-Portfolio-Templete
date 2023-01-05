@@ -30,14 +30,15 @@ const ProjectPage = () => {
                             "• Develop graphic rendering pipeline with material, lighting, model loader, PBR, Animation, and post-rendering process.",
                             "• Create multi-threading cross-platform application.",
                             "• Create protocol to transfer human pose data using UDP."]}
+                            documentUri=""
                             images={[
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/opencv.jpeg?raw=true",
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/opencv.jpeg?raw=true",
                                 "alt":"OpenCV",
                                 "des":"Motion Capture using OpenCV"
                             },
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/OpenGL_Assimp_Animation.gif?raw=true",
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/OpenGL_Assimp_Animation.gif?raw=true",
                                 "alt":"OpenGL Renderer",
                                 "des":"Animation scene rendering"
                             }
@@ -50,6 +51,7 @@ const ProjectPage = () => {
                             prjName="OpenGL Renderer" 
                             duration="07/2022 – CURRENT" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
+                            documentUri=""
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/OpenGL-Renderer/raw/develop/screenshots/sphereandmodel.png?raw=true",
@@ -66,13 +68,14 @@ const ProjectPage = () => {
                             prjName="Vulkan Renderer" 
                             duration="05/2022 – CURRENT" 
                             description={["A 3D graphical rendering application that draws Wavefront .obj file in real-time. Based on Vulkan API and GLFW.",]}
+                            documentUri=""
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/MD-Vulkan-Renderer/raw/develop/img/model.gif",
                                 "alt":"Model Viking room",
                                 "des":"Viking room model by nigelgoh on (CC BY 4.0)."
-                            },
-                        ]}/>
+                            },]}
+                        />
                 <ContentBlock
                             id={3}
                             isMaximize={isMaximizeAll}
@@ -81,7 +84,8 @@ const ProjectPage = () => {
                             prjName="Covid 19 Tracking and News - Android Application" 
                             duration="04/2022 – 04/2022" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
-                            documentUri="https://github.com/minhdangphuoc/Web-Portfolio/blob/main/res/Covid%20Tracking%20Application%20Doc.pdf?raw=true"
+                            documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/a9ccf38de2fd7c58deb726475d5a6582b3e86982/res/Covid%20Tracking%20Application%20Doc.pdf"
+                            images={[]}
                             />
 
                 </ol>

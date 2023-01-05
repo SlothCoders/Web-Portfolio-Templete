@@ -1,9 +1,9 @@
 import CustomImg from './CustomImg';
-import DocViewer from "react-doc-viewer";
+import { Viewer } from '@react-pdf-viewer/core';
+
+import '@react-pdf-viewer/core/lib/styles/index.css';
 
 const ContentBlock = (props) => {
-    // const [isMaximize,setMaximize] = useState(props.isMaximizeAll)
-    
     return (
         <div onClick={()=>{
             try
@@ -29,15 +29,18 @@ const ContentBlock = (props) => {
                 props.description?.map(para => <p key={props.description.indexOf(para)}>{para}</p>)
             }
             
-            {props.isMaximize[props.id]  === true &&
-                 props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)
-            }
-              {props.isMaximize[props.id]  === false &&
+            {!props.isMaximize[props.id] ?
                 <div>
                     <div className='bg-gray-200 h-[1px]'></div>
                     <p className='w-full text-center mt-4'>{"Click to expand this card"}</p>
                 </div>
-            }
+                : <div>
+                    {props.documentUri.length!=0&& 
+                        <div className='h-[750px] mx-12 outline outline-2 outline-grey-400 my-8'>
+                            <Viewer fileUrl={props.documentUri}/>
+                        </div> }
+                    { props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)}
+                </div>}
         </div>
     )
 }
