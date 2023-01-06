@@ -49,13 +49,13 @@ html {
         @apply text-center m-0
     }
     p {
-        @apply text-sm my-2 justify-start
+        @apply text-sm mt-1  mb-2 justify-start
     }
     h1 {
         @apply font-bold justify-start my-2 text-gray-900 text-[24px]
     }
     h2 {
-        @apply font-bold justify-start mb-2 mt-3 text-gray-900 text-[18px]
+        @apply font-bold justify-start mb-2 mt-1 text-gray-900 text-[18px]
     }
 
 }

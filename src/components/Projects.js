@@ -29,7 +29,7 @@ const ProjectPage = () => {
                             "• Develop graphic rendering pipeline with material, lighting, model loader, PBR, Animation, and post-rendering process.",
                             "• Create multi-threading cross-platform application.",
                             "• Create protocol to transfer human pose data using UDP."]}
-                            documentUri=""
+  
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/opencv.jpeg?raw=true",
@@ -50,7 +50,7 @@ const ProjectPage = () => {
                             prjName="OpenGL Renderer" 
                             duration="07/2022 – CURRENT" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
-                            documentUri=""
+  
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/OpenGL-Renderer/raw/develop/screenshots/sphereandmodel.png?raw=true",
@@ -67,7 +67,7 @@ const ProjectPage = () => {
                             prjName="Vulkan Renderer" 
                             duration="05/2022 – CURRENT" 
                             description={["A 3D graphical rendering application that draws Wavefront .obj file in real-time. Based on Vulkan API and GLFW.",]}
-                            documentUri=""
+
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/MD-Vulkan-Renderer/raw/develop/img/model.gif",
@@ -84,26 +84,42 @@ const ProjectPage = () => {
                             duration="04/2022 – 04/2022" 
                             description={["Covid-19 is remaining an interesting topic to work with. By understanding personal needs, an application is made for updating news about covid-19 from any country.",]}
                             documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/a9ccf38de2fd7c58deb726475d5a6582b3e86982/res/Covid%20Tracking%20Application%20Doc.pdf"
-                            images={[]}
+                            documentDes="Project Diary"
+
                             />
                 <ContentBlock
                             id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
-                            url="https://github.com/minhdangphuoc/MD-Vulkan-Renderer" 
+                            url="https://github.com/minhdangphuoc/TailwindCSS-Todo-List" 
                             prjName="TailwindCSS Todo List" 
                             duration="11/2021 – 12/2021" 
                             description={[
                                 "- Express backend generates random tasks from a REST API endpoint.",
                                 "- ReactJS and TailwindCSS frontend with a simple TODO-app where initial tasks are fetched from the backend.",
                             ]}
-                            documentUri=""
+                            website="https://minhdangphuoc.github.io/TailwindCSS-Todo-List/"
+                            websiteDes="Live Demo: TailwindCSS-Todo-List"
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/todolist.png?raw=true",
                                 "alt":"Todo List Screenshot",
                                 "des":"TailwindCSS Todo List"
                             },]}
+                        />
+                <ContentBlock
+                            id={counter++}
+                            isMaximize={isMaximizeAll}
+                            setMaximizeAll={setMaximizeAll}
+                            url="https://github.com/minhdangphuoc/Humi_Temp_Web" 
+                            prjName="Weather dashboard" 
+                            duration="11/2021 – 12/2021" 
+                            description={[
+                                "Website frontend is written by vanilla HTML, CSS, and Javascript with simple tables and graphs where real-time temperature and humidity values are fetched from the backend. ",
+                            ]}
+                            website="https://minhdangphuoc.github.io/Humi_Temp_Web/"
+                            websiteDes="Live Demo: Humi_Temp_Web"
+                            images={[]}
                         />
                 </ol>
             </div>

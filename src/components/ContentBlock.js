@@ -20,10 +20,14 @@ const ContentBlock = (props) => {
             }
         }} 
             className="transition ease-linear duration-100 bg-white px-4 py-2 mx-4 hover:scale-[1.01] shadow-sm mb-4 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
-            <p>{props.duration}</p>
             <div className='lg:flex lg:justify-between'>
-                <h2><li>{props.prjName}</li></h2>
-                <button before={props.url} onClick={() => window.open(props.url)} className="transition ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 mb-2 xl:text-sm text-xs px-6 py-3 rounded-full text-gray-50 hover"></button>
+                <div>
+                    <p>{props.duration}</p>
+                    <h2><li>{props.prjName}</li></h2>
+                </div>
+                <div className='flex flex-col justify-center'>
+                    <button before={props.url} onClick={() => window.open(props.url)} className="py-3 transition ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full text-gray-50 hover"></button>
+                </div>
             </div>
             { 
                 props.description?.map(para => <p key={props.description.indexOf(para)}>{para}</p>)
@@ -35,13 +39,28 @@ const ContentBlock = (props) => {
                     <p className='w-full text-center mt-4'>{"Click to expand"}</p>
                 </div>
                 : <div>
-                    {props.documentUri.length!==0&& 
-                        <div className='flex justify-center'>
-                            <div className='sm:h-[750px] h-[100vh] w-[1000px]  outline outline-2 outline-grey-400 my-8'>
+                    {props.documentUri !== undefined && 
+                        <div> 
+                            <div className='flex justify-center'>
+                            <div className='sm:h-[750px] h-[100vh] w-[1000px]  outline outline-2 outline-grey-400 mt-8 mb-2'>
                                 <Viewer className="object-cover" fileUrl={props.documentUri}/>
                             </div> 
+                            </div>
+                            <p className="text-center mb-8">{props.documentDes}</p>
                         </div>}
-                    { props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)}
+                        {props.website !== undefined && 
+                        <div> 
+                        <div className='flex justify-center'>
+                            <iframe
+                                className='sm:h-[750px] h-[100vh] w-[1200px]  outline outline-2 outline-grey-400 mt-8 mb-2'
+                                id="iFrameExample"
+                                title="iFrame Example"
+                                src={props.website}
+                            />
+                            </div>
+                        <p className="text-center mb-8">{props.websiteDes}</p>
+                        </div>}
+                    { props.images !== undefined && props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)}
                 </div>}
         </div>
     )

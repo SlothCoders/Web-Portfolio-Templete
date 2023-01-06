@@ -13,7 +13,7 @@ const CustomImg = (props) => {
                 <img style={loaded ? {} : {display: 'none'}} className="rounded-xl my-2 h-fit sm:max-w-[50vw] object-contain" src={props.src} onLoad={onLoad} alt={props.alt}/>
             </LazyLoad>
             {loaded===false&&<LoadingSpinner />}
-            <p className="text-center">{props.description}</p>
+            <p className="text-center mb-8">{props.description}</p>
         </>
     );
 }

@@ -17,59 +17,7 @@ const ExperiencePage  = () => {
                 
                 <ol className="list-decimal list-inside">
 
-                <ContentBlock 
-                            id={counter++}
-                            isMaximize={isMaximizeAll}
-                            setMaximizeAll={setMaximizeAll}
-                            url="https://github.com/minhdangphuoc/Motion-Capture"
-                            prjName="Motion Capture using Open CV and Open GL" 
-                            duration="04/09/2022 – CURRENT" 
-                            description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
-                            "Technologies: Modern C++, Python, Dear Imgui, Concurrency, OpenCV, OpenGL, UDP.",
-                            "My activities:",
-                            "• Develop graphic rendering pipeline with material, lighting, model loader, PBR, Animation, and post-rendering process.",
-                            "• Create multi-threading cross-platform application.",
-                            "• Create protocol to transfer human pose data using UDP."]}
-                            documentUri=""
-                            images={[
-                            {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/opencv.jpeg?raw=true",
-                                "alt":"OpenCV",
-                                "des":"Motion Capture using OpenCV"
-                            },
-                            {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/OpenGL_Assimp_Animation.gif?raw=true",
-                                "alt":"OpenGL Renderer",
-                                "des":"Animation scene rendering"
-                            }
-                        ]}/>
-
-                <ContentBlock 
-                            id={counter++}
-                            isMaximize={isMaximizeAll}
-                            setMaximizeAll={setMaximizeAll}
-                            url="https://github.com/minhdangphuoc/Motion-Capture"
-                            prjName="Motion Capture using Open CV and Open GL" 
-                            duration="04/09/2022 – CURRENT" 
-                            description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
-                            "Technologies: Modern C++, Python, Dear Imgui, Concurrency, OpenCV, OpenGL, UDP.",
-                            "My activities:",
-                            "• Develop graphic rendering pipeline with material, lighting, model loader, PBR, Animation, and post-rendering process.",
-                            "• Create multi-threading cross-platform application.",
-                            "• Create protocol to transfer human pose data using UDP."]}
-                            documentUri=""
-                            images={[
-                            {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/opencv.jpeg?raw=true",
-                                "alt":"OpenCV",
-                                "des":"Motion Capture using OpenCV"
-                            },
-                            {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/OpenGL_Assimp_Animation.gif?raw=true",
-                                "alt":"OpenGL Renderer",
-                                "des":"Animation scene rendering"
-                            }
-                        ]}/>
+              
                 </ol>
             </div>
     );
