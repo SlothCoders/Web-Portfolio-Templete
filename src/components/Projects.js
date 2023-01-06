@@ -9,8 +9,8 @@ const ProjectPage = () => {
                 <div className='flex justify-between mb-2'>
                 <h1 className="pl-4">Projects</h1>
                     <div>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-2xl rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-2xl rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 mr-4 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
                     </div>
                 </div>
             
@@ -66,7 +66,9 @@ const ProjectPage = () => {
                             url="https://github.com/minhdangphuoc/MD-Vulkan-Renderer" 
                             prjName="Vulkan Renderer" 
                             duration="05/2022 – CURRENT" 
-                            description={["A 3D graphical rendering application that draws Wavefront .obj file in real-time. Based on Vulkan API and GLFW.",]}
+                            description={["A 3D graphical rendering application renders Wavefront .obj file in real-time. Based on Vulkan API and GLFW.",
+                            "Technologies: Modern C++, Vulkan API, GLFW.",
+                            ]}
 
                             images={[
                             {

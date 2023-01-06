@@ -9,11 +9,16 @@ const CustomImg = (props) => {
 
     return(
         <>
-            <LazyLoad  className="flex justify-center">
+        <div className="flex flex-col justify-end mx-4">
+            <div>
+            <LazyLoad>
                 <img style={loaded ? {} : {display: 'none'}} className="rounded-xl my-2 h-fit sm:max-w-[50vw] object-contain" src={props.src} onLoad={onLoad} alt={props.alt}/>
             </LazyLoad>
             {loaded===false&&<LoadingSpinner />}
-            <p className="text-center mb-8">{props.description}</p>
+            
+                <p className="text-center mb-8">{props.description}</p>
+            </div>
+        </div>
         </>
     );
 }

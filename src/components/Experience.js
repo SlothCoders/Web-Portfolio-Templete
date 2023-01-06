@@ -10,8 +10,8 @@ const ExperiencePage  = () => {
                 <div className='flex justify-between mb-2'>
                 <h1 className="pl-4">Experience</h1>
                     <div>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="bg-gray-800 py-3 mr-1 hover:bg-blue-600 xl:text-sm text-xs px-8 rounded-full text-gray-50 hover">{"Expand All"}</button>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="bg-gray-800 py-3 hover:bg-blue-600 xl:text-sm text-xs px-8 rounded-full text-gray-50 hover">{"Close All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 mr-4 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
                     </div>
                 </div>
                 
@@ -20,35 +20,31 @@ const ExperiencePage  = () => {
                             id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
-                            url="https://github.com/minhdangphuoc/Motion-Capture"
-                            prjName="Computer Graphic And Ble Developer, Summer Trainee" 
-                            duration="04/09/2022 – CURRENT" 
-                            description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
-                            "Technologies: Modern C++, Python, Dear Imgui, Concurrency, OpenCV, OpenGL, UDP.",
-                            "My activities:",
-                            "• Develop graphic rendering pipeline with material, lighting, model loader, PBR, Animation, and post-rendering process.",
-                            "• Create multi-threading cross-platform application.",
-                            "• Create protocol to transfer human pose data using UDP."]}
+                            url="https://github.com/minhdangphuoc/BNO055-BLE-Vulkan"
+                            prjName="Computer Graphic And Ble Developer" 
+                            duration="04/02/2022 – 29/06/2022 | Tampere, Finland" 
+                            description={
+                                ["An application receives orientation value from a controller and responsively presents a 3D object based on the input data.",
+                                "My activities:",
+                                "• Created a graphic rendering pipeline and OBJ file loader written in C++. Used GLFW, and Vulkan API.",
+                                "• Developed a data transferring method using Bluetooth LE to receive Euler-angle values from an absolute orientation sensor.",]}
   
-                            images={[
+                            videos={[
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/opencv.jpeg?raw=true",
-                                "alt":"OpenCV",
-                                "des":"Motion Capture using OpenCV"
+                                "url":"https://github.com/minhdangphuoc/BNO055-BLE-Vulkan/blob/main/img/BLE2DRotation.mp4?raw=true",
+                                "des":"Rotate 2D model by controller"
                             },
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/OpenGL_Assimp_Animation.gif?raw=true",
-                                "alt":"OpenGL Renderer",
-                                "des":"Animation scene rendering"
-                            }
+                                "url":"https://github.com/minhdangphuoc/BNO055-BLE-Vulkan/blob/main/img/withcase.mp4?raw=true",
+                                "des":"Rotate 3D model by controller"
+                            },
                         ]}/>
                 <ContentBlock 
                             id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
-                            url="https://github.com/minhdangphuoc/Motion-Capture"
-                            prjName="Motion Capture using Open CV and Open GL" 
-                            duration="04/09/2022 – CURRENT" 
+                            prjName="Hardware Developer" 
+                            duration="04/02/2022 – 29/06/2022 | Tampere, Finland" 
                             description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
                             "Technologies: Modern C++, Python, Dear Imgui, Concurrency, OpenCV, OpenGL, UDP.",
                             "My activities:",
