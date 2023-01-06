@@ -34,21 +34,31 @@ const ContentBlock = (props) => {
                 </div>
                 <div className='flex flex-col justify-center'>
                     <div className='flex lg:justify-center max-h-[48px]'>
-                        {props.url!==undefined&&<button before={props.url} onClick={() => window.open(props.url)} className="transition lg:py-4 py-3 h-full ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full text-gray-50 hover"></button>}
-                        {props.isMaximize[props.id]===true
-                        ?<button onClick={()=>{clickToggle()}} className="ml-2 lg:p-4 p-3 bg-red-500 hover:bg-white hover:shadow-xl hover:outline hover:outline-2 hover:outline-red-500 h-full w-full rounded-full text-gray-50 hover:text-red-500"><RiCloseFill/></button>
-                        :<button onClick={()=>{clickToggle()}} className="ml-2 lg:p-4 p-3 bg-gray-500 hover:bg-white hover:shadow-xl hover:outline hover:outline-2 hover:outline-gray-500 h-full w-full rounded-full text-gray-50 hover:text-gray-500"><RiArrowDownSLine/></button>}
+                        {
+                            props.documentUri === undefined && props.website === undefined && props.images === undefined && props.videos === undefined 
+                            ?   <></>                            
+                            :<div> 
+                                {props.url!==undefined&&<button before={props.url} onClick={() => window.open(props.url)} className="transition lg:py-4 py-3 h-full ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full text-gray-50 hover"></button>}
+                                {props.isMaximize[props.id]===true
+                                    ?<button onClick={()=>{clickToggle()}} className="ml-2 lg:p-4 p-3 bg-red-500 hover:bg-white hover:shadow-xl hover:outline hover:outline-2 hover:outline-red-500 h-full w-full rounded-full text-gray-50 hover:text-red-500"><RiCloseFill/></button>
+                                    :<button onClick={()=>{clickToggle()}} className="ml-2 lg:p-4 p-3 bg-gray-500 hover:bg-white hover:shadow-xl hover:outline hover:outline-2 hover:outline-gray-500 h-full w-full rounded-full text-gray-50 hover:text-gray-500"><RiArrowDownSLine/></button>}
+                            </div>
+                            
+                        }
                     </div>
                 </div>
             </div>
             { 
                 props.description?.map(para => <p key={props.description.indexOf(para)}>{para}</p>)
             }
-            
-            {!props.isMaximize[props.id] ?
+            {
+            props.documentUri === undefined && props.website === undefined && props.images === undefined && props.videos === undefined 
+            ? <></>
+            : <>
+                {!props.isMaximize[props.id] ?
                 <div>
-                    <div className='bg-gray-200 h-[1px]'></div>
-                    <div className='flex justify-center'><RiArrowDownSLine className='w-8 h-8'/></div>
+                <div className='bg-gray-200 h-[1px]'></div>
+                <div className='flex justify-center'><RiArrowDownSLine className='w-8 h-8'/></div>
                 </div>
                 : <div>
                     {props.documentUri !== undefined && 
@@ -68,12 +78,12 @@ const ContentBlock = (props) => {
                                 id="iFrameExample"
                                 title="iFrame Example"
                                 src={props.website}
-                            />
+                                />
                             </div>
                         <p className="text-center mb-8">{props.websiteDes}</p>
                         </div>}
                         
-                        <div className='flex justify-center  mx-4'>
+                        <div className='flex justify-around'>
                         {props.videos !== undefined &&
                             props.videos?.map((video) => <div key={props.videos.indexOf(video)}>
                                 <div>
@@ -87,10 +97,12 @@ const ContentBlock = (props) => {
                                 </div>
                             </div>)}
                             </div>
-                        <div className='flex justify-center'>
+                        <div className='flex justify-around'>
                             { props.images !== undefined && props.images?.map((image) => <CustomImg key={props.images.indexOf(image)} src={image.src} alt={image.alt} description={image.des}></CustomImg>)}
                         </div>
                 </div>}
+            </>
+            }
         </div>
     )
 }

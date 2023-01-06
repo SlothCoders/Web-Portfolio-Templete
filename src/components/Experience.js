@@ -44,13 +44,12 @@ const ExperiencePage  = () => {
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             prjName="Hardware Developer" 
-                            duration="04/02/2022 – 29/06/2022 | Tampere, Finland" 
+                            duration="07/05/2021 – 08/07/2021 | Tampere, Finland" 
                             description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
-                            "Technologies: Modern C++, Python, Dear Imgui, Concurrency, OpenCV, OpenGL, UDP.",
+                            "Technologies: TinkerCad, 3D Printing, ESP32, Arduino",
                             "My activities:",
-                            "• Develop graphic rendering pipeline with material, lighting, model loader, PBR, Animation, and post-rendering process.",
-                            "• Create multi-threading cross-platform application.",
-                            "• Create protocol to transfer human pose data using UDP."]}
+                            "• Created a programable device that collects data from BNO055 - absolute orientation sensor.",
+                            ]}
   
                             images={[
                             {

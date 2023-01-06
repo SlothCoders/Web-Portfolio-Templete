@@ -22,7 +22,7 @@ const ProjectPage = () => {
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/Motion-Capture"
                             prjName="Motion Capture using Open CV and Open GL" 
-                            duration="04/09/2022 – CURRENT" 
+                            duration="04/09/2022 – Current" 
                             description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
                             "Technologies: Modern C++, Python, Dear Imgui, Concurrency, OpenCV, OpenGL, UDP.",
                             "My activities:",
@@ -48,7 +48,7 @@ const ProjectPage = () => {
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/OpenGL-Renderer" 
                             prjName="OpenGL Renderer" 
-                            duration="07/2022 – CURRENT" 
+                            duration="07/2022 – Current" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
   
                             images={[
@@ -65,7 +65,7 @@ const ProjectPage = () => {
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/MD-Vulkan-Renderer" 
                             prjName="Vulkan Renderer" 
-                            duration="05/2022 – CURRENT" 
+                            duration="05/2022 – Current" 
                             description={["A 3D graphical rendering application renders Wavefront .obj file in real-time. Based on Vulkan API and GLFW.",
                             "Technologies: Modern C++, Vulkan API, GLFW.",
                             ]}

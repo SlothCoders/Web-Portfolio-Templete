@@ -16,7 +16,7 @@ module.exports = {
 
     },
     minHeight: {
-      'card': 'calc(100vh - 4rem)',
+      // 'card': 'calc(100vh - 4rem)',
     }
 
 
