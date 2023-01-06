@@ -27,7 +27,7 @@ const ContentBlock = (props) => {
         }} 
             className="transition ease-linear duration-100 bg-white px-4 py-2 mx-4 hover:scale-[1.01] shadow-sm mb-4 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
             
-            <div className='lg:flex lg:justify-between'>
+            <div className='lg:flex lg:justify-between lg:mb-0 mb-4'>
                 <div>
                     <p>{props.duration}</p>
                     <h2><li>{props.prjName}</li></h2>
