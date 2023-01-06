@@ -1,5 +1,6 @@
 import CustomImg from './CustomImg';
 import { Viewer } from '@react-pdf-viewer/core';
+import { RiArrowDownSLine } from 'react-icons/ri';
 
 import '@react-pdf-viewer/core/lib/styles/index.css';
 
@@ -36,7 +37,7 @@ const ContentBlock = (props) => {
             {!props.isMaximize[props.id] ?
                 <div>
                     <div className='bg-gray-200 h-[1px]'></div>
-                    <p className='w-full text-center mt-4'>{"Click to expand"}</p>
+                    <div className='flex justify-center'><RiArrowDownSLine className='w-8 h-8'/></div>
                 </div>
                 : <div>
                     {props.documentUri !== undefined && 
