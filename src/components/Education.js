@@ -25,10 +25,8 @@ const EducationPage  = () => {
                             description={
                                 ["Bachelor of Applied Science - BASc, Computer",
                                 "Software Engineering",
-                                "• Created a graphic rendering pipeline and OBJ file loader written in C++. Used GLFW, and Vulkan API.",
-                                "• Developed a data transferring method using Bluetooth LE to receive Euler-angle values from an absolute orientation sensor.",]}
+                                "Activities and societies: Game Academy",]}
                             />
-                
                 </ol>
             </div>
     );
