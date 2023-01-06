@@ -54,14 +54,14 @@ const ExperiencePage  = () => {
   
                             images={[
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/opencv.jpeg?raw=true",
-                                "alt":"OpenCV",
-                                "des":"Motion Capture using OpenCV"
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/3D%20design%20via%20TinkerCAD.png?raw=true",
+                                "alt":"TinkerCAD Design",
+                                "des":"3D design via TinkerCAD"
                             },
                             {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/OpenGL_Assimp_Animation.gif?raw=true",
-                                "alt":"OpenGL Renderer",
-                                "des":"Animation scene rendering"
+                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/Controller.png?raw=true",
+                                "alt":"Controller",
+                                "des":"Controller with printed cover"
                             }
                         ]}/>
                 </ol>
