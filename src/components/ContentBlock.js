@@ -74,15 +74,23 @@ const ContentBlock = (props) => {
                         </div>}
                         {props.website !== undefined && 
                         <div> 
-                        <div className='flex justify-center'>
+                        <div className='flex justify-center mt-8 mb-4 w-fit h-fit'>
+                            <div className='border-2 border-gray-600 p-2 rounded-lg bg-gray-900'>
+                            <div className='flex justify-between items-center'>
+                                <h2 className='text-white'>{props.websiteDes}</h2>
+                                <button before={props.website} onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-300 before:content-['Access_live_demo'] xl:hover:before:content-[attr(before)] bg-white hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full hover:text-white text-gray-800 hover"></button>
+                            </div>
                             <iframe
-                                className='sm:h-[750px] h-[100vh] w-[1200px]  outline outline-2 outline-grey-400 mt-8 mb-2'
+                                className='h-[64vh] w-[64vw] max-w-full  outline outline-2 outline-gray-600 mt-2 rounded-lg'
                                 id="iFrameExample"
                                 title="iFrame Example"
+                                width="100%"
+                                height="100%"
                                 src={props.website}
                                 />
                             </div>
-                        <p className="text-center mb-8">{props.websiteDes}</p>
+                            </div>
+                        <p className="text-center mb-8">{"Live Demo: " + props.websiteDes}</p>
                         </div>}
                         
                         <div className='flex justify-around flex-wrap items-end'>

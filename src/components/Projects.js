@@ -101,7 +101,7 @@ const ProjectPage = () => {
                                 "- ReactJS and TailwindCSS frontend with a simple TODO-app where initial tasks are fetched from the backend.",
                             ]}
                             website="https://minhdangphuoc.github.io/TailwindCSS-Todo-List/"
-                            websiteDes="Live Demo: TailwindCSS-Todo-List"
+                            websiteDes="TailwindCSS-Todo-List"
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/todolist.png?raw=true",
@@ -120,7 +120,7 @@ const ProjectPage = () => {
                                 "Website frontend is written by vanilla HTML, CSS, and Javascript with simple tables and graphs where real-time temperature and humidity values are fetched from the backend. ",
                             ]}
                             website="https://minhdangphuoc.github.io/Humi_Temp_Web/"
-                            websiteDes="Live Demo: Humi_Temp_Web"
+                            websiteDes="Humi_Temp_Web"
                             images={[]}
                         />
                 </ol>
