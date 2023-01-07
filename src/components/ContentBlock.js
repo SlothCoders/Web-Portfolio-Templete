@@ -28,7 +28,7 @@ const ContentBlock = (props) => {
         <div onClick={()=>{
             // if(props.isMaximize[props.id]===false)clickToggle()
         }} 
-            className="transition ease-linear duration-100 bg-white p-4 hover:scale-[1.01] shadow-sm mt-8 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
+            className="transition ease-linear duration-100 bg-white p-4 hover:scale-[1.01] shadow-sm sm:mt-8 mt-2 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
             
             <div className='lg:flex lg:justify-between'>
                 <div>
@@ -96,9 +96,9 @@ const ContentBlock = (props) => {
                         <div className='flex justify-around flex-wrap items-end'>
                         {props.videos !== undefined &&
                             props.videos?.map((video) => <div key={props.videos.indexOf(video)}>
-                                <div>
-                                    <div className="">
-                                        <ReactPlayer  width="100%" controls={false} url={video.url} playing={true} loop={true}>
+                                <div className="min-w-[32vw]">
+                                    <div className="player-wrapper bg-gray-900 rounded-md">
+                                        <ReactPlayer className="react-player rounded-md" muted="true" width="100%" height='100%' url={video.url} playing={true} loop={true}>
                                         </ReactPlayer>
                                     </div>
                                     <div className='flex justify-center'>

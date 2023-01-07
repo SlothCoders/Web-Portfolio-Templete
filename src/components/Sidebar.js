@@ -67,11 +67,11 @@ const Sidebar = (props) => {
                 <p className="text-[15px] ml-2 text-gray-200 font-bold">Contact</p>
             </div>
         </div>
-        <div onClick={()=> window.open("https://github.com/minhdangphuoc/Web-Portfolio")} className="flex justify-evenly items-center w-full h-12 bg-white rounded">
-          <p className="mb-0">
+        <div onClick={()=> window.open("https://github.com/minhdangphuoc/Web-Portfolio")} className="flex justify-between items-center w-full h-12 bg-white rounded-md m-2 hover:bg-blue-50 hover:scale-[1.02]">
+          <img className="h-full w-fit rounded-md p-2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img>
+          <p className="mb-0 grow text-center font-semibold">
             Visit website repo
           </p>
-          <img className="h-full" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></img>
         </div>
       </div>
     ); 
