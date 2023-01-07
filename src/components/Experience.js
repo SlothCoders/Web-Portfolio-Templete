@@ -6,12 +6,12 @@ const ExperiencePage  = () => {
     const [isMaximizeAll, setMaximizeAll] = useState(Array(10).fill(true)) 
     var counter=0;
     return (
-            <div  className="w-full bg-white px-4 py-8 sm:min-h-card rounded-xl shadow-2xl outline outline-gray-300 outline-1">
-                <div className='md:flex md:justify-between mb-2'>
-                <h1 className="pl-4">Experience</h1>
+            <div  className="w-full bg-white sm:p-8 p-4 sm:min-h-card rounded-xl shadow-xl outline outline-gray-300 outline-1">
+                <div className='md:flex md:justify-between items-center'>
+                <h1 className="">Experience</h1>
                     <div>
                         <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="md:ml-0 ml-4 transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 mr-4 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
                     </div>
                 </div>
                 

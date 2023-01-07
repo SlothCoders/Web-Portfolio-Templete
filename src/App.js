@@ -57,17 +57,17 @@ const App = () => {
     <Route path="/portfolio" element={
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.min.js">
 
-      <div className="sm:flex sm:flex-row sm:py-0 pt-8 sm:overflow-y-auto overflow-hidden h-full sm:h-screen">
+      <div className="sm:flex sm:flex-row sm:py-0 sm:pl-8 sm:p-0 p-2 sm:overflow-y-auto overflow-hidden h-full sm:h-screen">
         <button onClick={() => scrollTop()} className="fixed sm:hidden p-4 m-2  active:shadow-2xl  active:outline-2  active:outline-blue-600  active:outline  active:bg-blue-200  h-fit min-w-8 w-fit right-0 bottom-0 rounded-md shadow-md bg-blue-300"> 
           Scroll to top 
         </button>
-        <div className="sm:min-w-[90px] sm:pl-8 sm:px-0 px-8 sm:py-8">
+        <div className="sm:min-w-[90px] sm:px-0 sm:py-8">
           <Sidebar  sidebarHandler={sidebarHandler} ></Sidebar>
         </div>
-        <div className="sm:grow h-full sm:flex-col sm:overflow-y-auto justify-between px-8 pb-8">
+        <div className="sm:grow h-full sm:flex-col sm:px-8  sm:overflow-y-auto justify-between">
           {
             pages.map((page) => 
-            <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===pages.length?"pt-8 pb-8 snap-start":"pt-8 snap-start"}>
+            <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===pages.length?"sm:pt-8 sm:pb-8 pt-2 pb-2 snap-start":"sm:pt-8 pt-2 snap-start"}>
               {page}
             </div>)
           }
