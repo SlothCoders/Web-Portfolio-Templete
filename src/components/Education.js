@@ -23,7 +23,7 @@ const EducationPage  = () => {
                             prjName="Tampere University of Applied Sciences" 
                             duration="8/2020 – Current | Tampere, Finland" 
                             description={
-                                ["Bachelor of Applied Science - BASc, Computer",
+                                ["Bachelor of Applied Science - BEng, Computer",
                                 "Software Engineering",
                                 "Activities and societies: Game Academy",]}
                             />
