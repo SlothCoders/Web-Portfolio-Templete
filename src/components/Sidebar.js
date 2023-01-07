@@ -67,7 +67,7 @@ const Sidebar = (props) => {
                 <p className="text-[15px] ml-2 text-gray-200 font-bold">Contact</p>
             </div>
         </div>
-        <div onClick={()=> window.open("")} className="flex justify-evenly items-center w-full h-12 bg-white rounded">
+        <div onClick={()=> window.open("https://github.com/minhdangphuoc/Web-Portfolio")} className="flex justify-evenly items-center w-full h-12 bg-white rounded">
           <p className="mb-0">
             Visit website repo
           </p>

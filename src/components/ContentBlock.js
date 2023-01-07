@@ -28,7 +28,7 @@ const ContentBlock = (props) => {
         <div onClick={()=>{
             // if(props.isMaximize[props.id]===false)clickToggle()
         }} 
-            className="transition ease-linear duration-100 bg-white p-4 hover:scale-[1.01] shadow-sm mt-6 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
+            className="transition ease-linear duration-100 bg-white p-4 hover:scale-[1.01] shadow-sm mt-8 rounded-lg outline outline-1 hover:outline-2 hover:shadow-md hover:outline-gray-400 outline-gray-200 ">
             
             <div className='lg:flex lg:justify-between'>
                 <div>
@@ -41,7 +41,7 @@ const ContentBlock = (props) => {
                         ?   <></>                            
                         :<div className='flex flex-row sm:mb-0 mb-4'> 
                             <div className='flex flex-col justify-center'>
-                            {props.url!==undefined&& <button before={props.url} onClick={() => window.open(props.url)} className="transition mr-2 lg:py-4 py-3 h-[48px] ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full text-gray-50 hover"></button>}
+                            {props.url!==undefined&& <button before={props.url} onClick={() => window.open(props.url)} className="transition mr-2 lg:py-4 py-3 h-[48px] ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full text-gray-50"></button>}
                             </div>
                             <div className='flex flex-col justify-center'>
 
@@ -77,11 +77,11 @@ const ContentBlock = (props) => {
                         <div className='flex justify-center mt-8 mb-4 w-fit h-fit'>
                             <div className='border-2 border-gray-600 p-4 rounded-lg bg-gray-900'>
                             <div className='flex justify-between items-center'>
-                                <h2 className='text-white'>{props.websiteDes}</h2>
-                                <button before={props.website} onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-300 before:content-['Access_live_demo'] xl:hover:before:content-[attr(before)] bg-white hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full hover:text-white text-gray-800 hover"></button>
+                                <p className='text-white mb-0 font-semibold'>{props.website}</p>
+                                <button onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-100 before:content-['Access_site'] bg-gray-700 hover:bg-gray-600 focus:outline outline-2 focus:outline-blue-600 xl:text-sm text-xs px-6 rounded-full text-white"></button>
                             </div>
                             <iframe
-                                className='h-[64vh] w-[64vw] max-w-full  outline outline-2 outline-gray-600 mt-2 rounded-lg'
+                                className='h-[64vh] w-[64vw] max-w-full  outline outline-2 outline-gray-600 mt-4 rounded-lg'
                                 id="iFrameExample"
                                 title="iFrame Example"
                                 width="100%"
