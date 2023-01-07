@@ -16,7 +16,7 @@ const Sidebar = (props) => {
         
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex justify-between">
-            <p className="font-bold text-gray-200 text-[18px] ml-2">Minh Dang</p>
+            <p className="font-bold text-gray-200 text-[18px] ml-2 mt-2">Minh Dang</p>
           </div>
           <div className="my-2 bg-gray-600 h-[1px]"></div>
         </div>
@@ -26,35 +26,35 @@ const Sidebar = (props) => {
             <div onClick={() => props.sidebarHandler(0)}
               className="p-2.5 mt-3 rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-              <p   className="text-[15px] ml-2 text-gray-200 font-bold">About Me</p>
+              <p   className="text-[15px] ml-2 mt-2 text-gray-200 font-bold">About Me</p>
             </div>
 
             <div
               onClick={() => props.sidebarHandler(1)}
               className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Education</p>
+              <p className="text-[15px] ml-2 mt-2 text-gray-200 font-bold">Education</p>
             </div>
 
             <div
             onClick={() => props.sidebarHandler(2)}
             className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
             >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Experience</p>
+              <p className="text-[15px] ml-2 mt-2 text-gray-200 font-bold">Experience</p>
             </div>
 
             <div
               onClick={() => props.sidebarHandler(3)}
               className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Projects</p>
+              <p className="text-[15px] ml-2 mt-2 text-gray-200 font-bold">Projects</p>
             </div>
 
             <div
               onClick={() => props.sidebarHandler(4)}
               className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-              <p className="text-[15px] ml-2 text-gray-200 font-bold">Skills</p>
+              <p className="text-[15px] ml-2 mt-2 text-gray-200 font-bold">Skills</p>
             </div>
             
 
@@ -64,7 +64,7 @@ const Sidebar = (props) => {
               onClick={() => props.sidebarHandler(5)}
               className="p-2.5 mt-3  rounded-md px-4 cursor-pointer hover:bg-blue-600 text-white"
               >
-                <p className="text-[15px] ml-2 text-gray-200 font-bold">Contact</p>
+                <p className="text-[15px] ml-2 mt-2 text-gray-200 font-bold">Contact</p>
             </div>
         </div>
         <div onClick={()=> window.open("https://github.com/minhdangphuoc/Web-Portfolio")} className="flex justify-between items-center w-full h-12 bg-white rounded-md m-2 hover:bg-blue-50 hover:scale-[1.02]">
