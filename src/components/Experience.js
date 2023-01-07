@@ -10,7 +10,7 @@ const ExperiencePage  = () => {
                 <div className='md:flex md:justify-between items-center'>
                 <h1 className="">Experience</h1>
                     <div>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="md:ml-0 ml-4 transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="md:ml-4 ml-0 transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
                         <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
                     </div>
                 </div>
