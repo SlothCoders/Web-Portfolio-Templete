@@ -77,7 +77,7 @@ const ContentBlock = (props) => {
                         <div className='flex justify-center mt-8 mb-4 w-full h-fit'>
                             <div className='grow border-2 border-gray-60 w-full 0 p-4 rounded-lg bg-gray-900'>
                                 <div className='grow flex justify-between w-full flex-wrap gap-y-2 items-center'>
-                                    <p className='text-white mb-0 font-semibold'>{props.website}</p>
+                                    <p className='text-white mb-0 font-semibold text-ellipsis overflow-hidden'>{props.website}</p>
                                     <button onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-100 before:content-['Visit_website'] bg-gray-700 hover:bg-gray-600 focus:outline outline-2 focus:outline-blue-600 xl:text-sm text-xs px-6 rounded-full text-white"></button>
                                 </div>
                                 <iframe
