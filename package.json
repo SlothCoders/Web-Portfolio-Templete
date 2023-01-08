@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@react-icons/all-files": "^4.1.0",
+    "@react-pdf-viewer/theme": "^3.10.0",
     "autoprefixer": "^10.4.13",
     "gh-pages": "^4.0.0",
     "netlify-cli": "^12.5.0",

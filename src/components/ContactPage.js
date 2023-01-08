@@ -16,18 +16,36 @@ const ContactPage = () => {
                     </div> */}
                 </div>
                 
-                <ol className="list-decimal list-inside">
+                <ol className="list-inside">
+                
                 <ContentBlock 
-                            id={counter++}
-                            isMaximize={isMaximizeAll}
-                            setMaximizeAll={setMaximizeAll}
-                            prjName="Tampere University of Applied Sciences" 
-                            duration="8/2020 – Current | Tampere, Finland" 
-                            description={
-                                ["Bachelor of Applied Science - BEng, Computer",
-                                "Software Engineering",
-                                "Activities and societies: Game Academy",]}
-                            />
+                        id={counter++}
+                        isMaximize={isMaximizeAll}
+                        setMaximizeAll={setMaximizeAll}
+                        prjName="Emails"
+                        description={
+                            ["- minhdangphuoc@outlook.com",
+                            "- dangphuocminh1405@gmail.com",
+                            ]}
+                        />
+                <ContentBlock 
+                        id={counter++}
+                        isMaximize={isMaximizeAll}
+                        setMaximizeAll={setMaximizeAll}
+                        prjName="Github Profile"
+                        description={
+                            ["- https://github.com/minhdangphuoc",
+                            ]}
+                        />
+                <ContentBlock 
+                        id={counter++}
+                        isMaximize={isMaximizeAll}
+                        setMaximizeAll={setMaximizeAll}
+                        prjName="Linkedin Profile"
+                        description={
+                            ["- https://www.linkedin.com/in/minh-dang-phuoc",
+                            ]}
+                        />
                 </ol>
             </div>
     );

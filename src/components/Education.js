@@ -10,8 +10,8 @@ const EducationPage  = () => {
                 <div className='flex justify-between'>
                 <h1 className="mb-0">Education</h1>
                     {/* <div>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
-                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 mr-4 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(true))}} className="md:ml-4 ml-0 transform duration-300 border-gray-800 font-semibold	 border-2 py-3 mr-1 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Expand All"}</button>
+                        <button onClick={()=>{setMaximizeAll(Array(5).fill(false))}} className="ml-2 transform duration-300 border-gray-800 font-semibold border-2 py-3 hover:bg-gray-800 xl:text-sm text-xs px-8 hover:shadow-md rounded-full text-gray-800 hover:text-gray-100 hover">{"Collapse All"}</button>
                     </div> */}
                 </div>
                 
@@ -26,6 +26,16 @@ const EducationPage  = () => {
                                 ["Bachelor of Applied Science - BEng, Computer",
                                 "Software Engineering",
                                 "Activities and societies: Game Academy",]}
+                            />
+                <ContentBlock 
+                            id={counter++}
+                            isMaximize={isMaximizeAll}
+                            setMaximizeAll={setMaximizeAll}
+                            prjName="Phan Chau Trinh Upper Secondary School" 
+                            duration="08/2016 –  05-2019| Da Nang, Vietnam" 
+                            description={
+                                ["- Founder of Science and Engineeing Club",
+                               ]}
                             />
                 </ol>
             </div>

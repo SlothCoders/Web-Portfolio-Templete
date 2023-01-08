@@ -39,7 +39,7 @@ const ContentBlock = (props) => {
                     {
                         props.documentUri === undefined && props.website === undefined && props.images === undefined && props.videos === undefined 
                         ?   <></>                            
-                        :<div className='flex flex-row sm:mb-0 mb-4'> 
+                        :<div className='flex flex-row sm:mb-0 mb-4 '> 
                             <div className='flex flex-col justify-center'>
                             {props.url!==undefined&& <button before={props.url} onClick={() => window.open(props.url)} className="transition mr-2 lg:py-4 py-3 h-[48px] ease-linear duration-300 before:content-['Access_Source_code'] xl:hover:before:content-[attr(before)] bg-gray-800 hover:bg-blue-600 xl:text-sm text-xs px-6 rounded-full text-gray-50"></button>}
                             </div>
@@ -76,9 +76,9 @@ const ContentBlock = (props) => {
                         <div> 
                         <div className='flex justify-center mt-8 mb-4 w-fit h-fit'>
                             <div className='border-2 border-gray-600 p-4 rounded-lg bg-gray-900'>
-                            <div className='flex justify-between items-center'>
+                            <div className='flex justify-between items-center flex-wrap gap-y-2'>
                                 <p className='text-white mb-0 font-semibold'>{props.website}</p>
-                                <button onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-100 before:content-['Access_site'] bg-gray-700 hover:bg-gray-600 focus:outline outline-2 focus:outline-blue-600 xl:text-sm text-xs px-6 rounded-full text-white"></button>
+                                <button onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-100 before:content-['Visit_website'] bg-gray-700 hover:bg-gray-600 focus:outline outline-2 focus:outline-blue-600 xl:text-sm text-xs px-6 rounded-full text-white"></button>
                             </div>
                             <iframe
                                 className='h-[64vh] w-[64vw] max-w-full  outline outline-2 outline-gray-600 mt-4 rounded-lg'
@@ -98,7 +98,7 @@ const ContentBlock = (props) => {
                             props.videos?.map((video) => <div key={props.videos.indexOf(video)}>
                                 <div className="min-w-[32vw]">
                                     <div className="player-wrapper bg-gray-900 rounded-md">
-                                        <ReactPlayer className="react-player rounded-md" muted="true" width="100%" height='100%' url={video.url} playing={true} loop={true}>
+                                        <ReactPlayer className="react-player rounded-md" muted={true} width="100%" height='100%' url={video.url} playing={true} loop={true}>
                                         </ReactPlayer>
                                     </div>
                                     <div className='flex justify-center'>

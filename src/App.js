@@ -7,15 +7,15 @@ import Sidebar from "./components/Sidebar";
 import ProjectPage from "./components/Projects";
 import EducationPage from "./components/Education";
 import ExperiencePage from "./components/Experience";
-import SkillPage from "./components/Skills";
+import LicensesAndCertsPage from "./components/LicensesAndCertsPage";
+import HonorsAndAwardsPage from "./components/HonorsAndAwardsPage";
 import ContactPage from "./components/ContactPage";
 
 const App = () => {
-  const pages = [<AboutMe/>, <EducationPage/>, <ExperiencePage/>, <ProjectPage/>, <SkillPage/>, <ContactPage/>]
+  const pages = [<AboutMe/>, <EducationPage/>, <ExperiencePage/>, <ProjectPage/>, <LicensesAndCertsPage/>, <HonorsAndAwardsPage/>, <ContactPage/>]
   const ref = useRef(Array(pages.length).fill(null)) 
   
   const scrollTo = (current) => {
-    console.log(current)
     current.scrollIntoView({
       behavior: 'smooth',
       block: 'start',

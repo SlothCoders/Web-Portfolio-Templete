@@ -22,7 +22,7 @@ const PDFReader = ({uri}) => {
                 <ZoomPopover />
                 <ZoomInButton />
                 </div>
-                <div></div>
+                <div className='w-[32px] h-[32px]'></div>
             </div>
             <div className='flex overflow-hidden'>
                 <Viewer fileUrl={uri} plugins={[zoomPluginInstance, getFilePluginInstance]} />
