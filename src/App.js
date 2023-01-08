@@ -57,7 +57,7 @@ const App = () => {
     <Route path="/portfolio" element={
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.min.js">
 
-      <div className="sm:flex sm:flex-row sm:py-0 sm:pl-8 sm:p-0 p-2 sm:overflow-y-auto overflow-hidden h-full sm:h-screen">
+      <div className="sm:flex sm:flex-row sm:py-0 sm:pl-8 sm:p-0 p-2 sm:overflow-hidden overflow-hidden h-full sm:h-screen">
         <button onClick={() => scrollTop()} className="fixed sm:hidden p-4 m-2  active:shadow-2xl  active:outline-2  active:outline-blue-600  active:outline  active:bg-blue-200  h-fit min-w-8 w-fit right-0 bottom-0 rounded-md shadow-md bg-blue-300"> 
           Scroll to top 
         </button>
