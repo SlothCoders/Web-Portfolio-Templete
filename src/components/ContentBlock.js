@@ -74,21 +74,21 @@ const ContentBlock = (props) => {
                     </div>
                     {props.website !== undefined && 
                         <div> 
-                        <div className='flex justify-center mt-8 mb-4 w-fit h-fit'>
-                            <div className='border-2 border-gray-600 p-4 rounded-lg bg-gray-900'>
-                            <div className='flex justify-between items-center flex-wrap gap-y-2'>
-                                <p className='text-white mb-0 font-semibold'>{props.website}</p>
-                                <button onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-100 before:content-['Visit_website'] bg-gray-700 hover:bg-gray-600 focus:outline outline-2 focus:outline-blue-600 xl:text-sm text-xs px-6 rounded-full text-white"></button>
-                            </div>
-                            <iframe
-                                className='h-[64vh] w-[64vw] max-w-full  outline outline-2 outline-gray-600 mt-4 rounded-lg'
-                                id="iFrameExample"
-                                title="iFrame Example"
-                                width="100%"
-                                height="100%"
-                                src={props.website}
-                                />
-                            </div>
+                        <div className='flex justify-center mt-8 mb-4 w-full h-fit'>
+                            <div className='grow border-2 border-gray-60 w-full 0 p-4 rounded-lg bg-gray-900'>
+                                <div className='grow flex justify-between w-full flex-wrap gap-y-2 items-center'>
+                                    <p className='text-white mb-0 font-semibold'>{props.website}</p>
+                                    <button onClick={() => window.open(props.website)} className="transition lg:py-4 py-3 h-[48px] ease-linear duration-100 before:content-['Visit_website'] bg-gray-700 hover:bg-gray-600 focus:outline outline-2 focus:outline-blue-600 xl:text-sm text-xs px-6 rounded-full text-white"></button>
+                                </div>
+                                <iframe
+                                    className='h-[64vh] grow max-w-full  outline outline-2 outline-gray-600 mt-4 rounded-lg'
+                                    id="iFrameExample"
+                                    title="iFrame Example"
+                                    width="100%"
+                                    height="100%"
+                                    src={props.website}
+                                    />
+                                </div>
                             </div>
                         <p className="text-center mb-8">{"Live Demo: " + props.websiteDes}</p>
                         </div>}

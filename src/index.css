@@ -54,7 +54,7 @@ html {
 
 @layer base {
     h1, h2, h3, p, a {
-        @apply font-mono text-left text-ellipsis truncate
+        @apply font-mono text-left text-ellipsis overflow-hidden
     }
     CustomImg p {
         @apply text-center m-0
