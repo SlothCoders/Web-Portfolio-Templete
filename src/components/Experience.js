@@ -45,7 +45,7 @@ const ExperiencePage  = () => {
                             setMaximizeAll={setMaximizeAll}
                             prjName="Hardware Developer" 
                             duration="07/05/2021 – 08/07/2021 | Tampere, Finland" 
-                            description={["Track human pose and render an animated model depending on user motion. There will be two software works in parallel and communicate through a data transfer protocol.",
+                            description={["ESP32 gamepad with additional orientation data collector from BNO055 sensor.",
                             "Technologies: TinkerCad, 3D Printing, ESP32, Arduino",
                             "My activities:",
                             "• Created a programable device that collects data from BNO055 - absolute orientation sensor.",
