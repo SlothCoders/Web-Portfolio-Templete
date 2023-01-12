@@ -15,10 +15,6 @@ const AboutMe = () => {
                         </ul>
 
                     <h2>Status</h2>
-                        <div className="min-[1370px]:flex min-[1370px]:justify-start min-[1370px]:h-fit min-[1370px]:w-full">
-                        <img className="min-[1370px]:object-cover min-[1370px]:w-full min-[1370px]:h-full" src="https://github-readme-stats.vercel.app/api/top-langs/?username=minhdangphuoc&langs_count=10&theme=dracula&layout=compact" alt="Most Used Languages"/>
-                        <img className="min-[1370px]:object-cover min-[1370px]:w-full min-[1370px]:h-[215px]" src="https://github-readme-stats.vercel.app/api?username=minhdangphuoc&show_icons=true&theme=dracula" alt="Github Stats"/>
-                        </div>
                         <img className="min-[1370px]:h-[215px]" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=minhdangphuoc&theme=dracula" alt="Contributions"/>
                 
             </div>
