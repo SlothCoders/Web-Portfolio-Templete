@@ -36,6 +36,8 @@ const ProjectPage = () => {
                             duration="1/12/2022 – 13/12/2022" 
                             description={[
                                 "Training CNN model to predict Vietnamese letters",
+                                "My activities:",
+                                "- Have written a python script to create writing and testing dataset, a script to train data with reference model and a script to predict images",
                             ]}
                             documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/main/assets/Minh_Dang_Vietnamese_CNN_Report.pdf"
                             documentDes="Project Report"
