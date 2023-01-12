@@ -20,6 +20,19 @@ const ProjectPage = () => {
                             id={counter++}
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
+                            prjName="Flutter News" 
+                            duration="20/12/2022 – 24/12/2022" 
+                            description={[
+                                "This application fetches news from Google News with some query parameters and displays each news into clickable cardview. After clicking news card, it will direct user to webview page using navigation.",
+                            ]}
+                            documentUri="https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/flutter_news.pdf"
+                            documentDes="Project Diary"
+                          />
+
+                <ContentBlock 
+                            id={counter++}
+                            isMaximize={isMaximizeAll}
+                            setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/Motion-Capture"
                             prjName="Motion Capture using Open CV and Open GL" 
                             duration="04/09/2022 – Current" 
@@ -50,7 +63,7 @@ const ProjectPage = () => {
                             prjName="OpenGL Renderer" 
                             duration="07/2022 – Current" 
                             description={["A modern graphical rendering engine based on Modern C++, OpenGL API, GLFW and Dear ImGUI.",]}
-  
+                        
                             images={[
                             {
                                 "src":"https://github.com/minhdangphuoc/OpenGL-Renderer/raw/develop/screenshots/sphereandmodel.png?raw=true",
