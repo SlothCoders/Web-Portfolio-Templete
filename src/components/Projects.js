@@ -25,10 +25,21 @@ const ProjectPage = () => {
                             description={[
                                 "This application fetches news from Google News with some query parameters and displays each news into clickable cardview. After clicking news card, it will direct user to webview page using navigation.",
                             ]}
-                            documentUri="https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/flutter_news.pdf"
+                            documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/main/assets/flutter_news.pdf"
                             documentDes="Project Diary"
                           />
-
+                <ContentBlock 
+                            id={counter++}
+                            isMaximize={isMaximizeAll}
+                            setMaximizeAll={setMaximizeAll}
+                            prjName="Vietnamese CNN" 
+                            duration="1/12/2022 – 13/12/2022" 
+                            description={[
+                                "Training CNN model to predict Vietnamese letters",
+                            ]}
+                            documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/main/assets/Minh_Dang_Vietnamese_CNN_Report.pdf"
+                            documentDes="Project Report"
+                          />
                 <ContentBlock 
                             id={counter++}
                             isMaximize={isMaximizeAll}
