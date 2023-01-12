@@ -64,7 +64,7 @@ const App = () => {
         <div className="sm:min-w-[90px] sm:px-0 sm:py-8">
           <Sidebar  sidebarHandler={sidebarHandler} ></Sidebar>
         </div>
-        <div className="sm:grow h-full sm:flex-col sm:px-8  sm:overflow-y-auto justify-between">
+        <div className="sm:grow h-full sm:flex-col sm:px-8  sm:overflow-y-auto overflow-x-hidden justify-between">
           {
             pages.map((page) => 
             <div key={pages.indexOf(page)} ref={el => ref.current[pages.indexOf(page)] = el} className={pages.indexOf(page)===pages.length?"sm:pt-8 sm:pb-8 pt-2 pb-2 snap-start":"sm:pt-8 pt-2 snap-start"}>
