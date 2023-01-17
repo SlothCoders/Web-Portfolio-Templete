@@ -37,7 +37,7 @@ const ProjectPage = () => {
                             description={[
                                 "Training CNN model to predict Vietnamese letters",
                                 "My activities:",
-                                "- Have written a python script to create writing and testing dataset, a script to train data with reference model and a script to predict images",
+                                "- Wrote a python script to create writing and testing dataset, a script to train data with reference model and a script to predict images",
                             ]}
                             documentUri="https://raw.githubusercontent.com/minhdangphuoc/Web-Portfolio/main/assets/Minh_Dang_Vietnamese_CNN_Report.pdf"
                             documentDes="Project Report"
