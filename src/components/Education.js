@@ -32,7 +32,7 @@ const EducationPage  = () => {
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             prjName="FPT University" 
-                            duration="08/2019 –  05-2020 (Dropout) | Da Nang, Vietnam" 
+                            duration="08/2019 –  05/2020 (Dropout) | Da Nang, Vietnam" 
                             description={[
                                 "Awarded Full Scholarship for four-year study",
                                ]}
@@ -42,7 +42,7 @@ const EducationPage  = () => {
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             prjName="Phan Chau Trinh Upper Secondary School" 
-                            duration="08/2016 –  05-2019 | Da Nang, Vietnam" 
+                            duration="08/2016 –  05/2019 | Da Nang, Vietnam" 
                             description={
                                 ["Founder of Science and Engineeing Club",
                                ]}
