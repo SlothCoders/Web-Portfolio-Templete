@@ -32,10 +32,9 @@ const EducationPage  = () => {
                             isMaximize={isMaximizeAll}
                             setMaximizeAll={setMaximizeAll}
                             prjName="FPT University" 
-                            duration="08/2019 –  05-2020| Da Nang, Vietnam" 
+                            duration="08/2019 –  05-2020 (Dropout)| Da Nang, Vietnam" 
                             description={[
                                 "- Awarded Full Scholarship for four-year study",
-                                "- Dropout"
                                ]}
                             />
                 <ContentBlock 
