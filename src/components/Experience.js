@@ -22,7 +22,7 @@ const ExperiencePage  = () => {
                             setMaximizeAll={setMaximizeAll}
                             url="https://github.com/minhdangphuoc/BNO055-BLE-Vulkan"
                             prjName="Computer Graphic And Ble Developer" 
-                            duration="04/06/2022 – 29/06/2022 | Tampere, Finland" 
+                            duration="04/05/2022 – 29/06/2022 | Tampere, Finland" 
                             description={
                                 ["An application receives orientation value from a controller and responsively presents a 3D object based on the input data.",
                                 "My activities:",
