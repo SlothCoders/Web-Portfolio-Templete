@@ -73,7 +73,7 @@ const Sidebar = (props) => {
             </div>
         </div>
         <div onClick={()=> window.open("https://github.com/minhdangphuoc/Web-Portfolio")} className="flex xl:flex-row flex-col justify-between items-center w-full bg-white rounded-md m-2 hover:bg-blue-50 hover:scale-[1.02]">
-          <img className="h-12 w-12 rounded-md p-2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img>
+          <img className="h-12 w-12 rounded-md p-2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo"></img>
           <p className="mb-0 grow sm:inline hidden text-center font-semibold">
             Visit website repo
           </p>
