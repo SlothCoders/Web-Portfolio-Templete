@@ -6,7 +6,7 @@ const Sidebar = (props) => {
         className='h-full p-2 sm:max-w-[300px] text-center rounded-xl bg-gray-900 flex flex-col'
       >
         <div className="flex h-fit justify-center">
-          <LazyLoad className="px-4 pt-4">
+          <LazyLoad className="px-4 pt-4 sm:hidden lg:inline md:inline">
             <img className="rounded-full" src="https://avatars.githubusercontent.com/u/37279565" alt="Personal"></img>
           </LazyLoad>
         
