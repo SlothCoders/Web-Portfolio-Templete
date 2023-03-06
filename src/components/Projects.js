@@ -61,13 +61,15 @@ const ProjectPage = () => {
                                 "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/opencv.jpeg?raw=true",
                                 "alt":"OpenCV",
                                 "des":"Motion Capture using OpenCV"
-                            },
-                            {
-                                "src":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/OpenGL_Assimp_Animation.gif?raw=true",
-                                "alt":"OpenGL Renderer",
-                                "des":"Animation scene rendering"
-                            }
-                        ]}/>
+                            }]}
+
+                            videos={[
+                                {
+                                    "url":"https://github.com/minhdangphuoc/Web-Portfolio/blob/main/assets/HumanPoseRenderer.mp4?raw=true",
+                                    "des":"OpenGL Renderer for Human Pose"
+                                },
+                            ]}
+                        />
                 <ContentBlock
                             id={counter++}
                             isMaximize={isMaximizeAll}
